@@ -108,8 +108,8 @@ if __name__ == "__main__":
 
     # Argument parsing
     parser = argparse.ArgumentParser(description='PyTorch Training Script')
-    parser.add_argument('-d', '--development_dir', type=str, required=True help='Path to the development dataset directory')
-    parser.add_argument('-t', '--testing_dir', type=str, required=True help='Path to the testing dataset directory')
+    parser.add_argument('-d', '--development_dir', type=str, required=True, help='Path to the development dataset directory')
+    parser.add_argument('-t', '--testing_dir', type=str, required=True, help='Path to the testing dataset directory')
     args = parser.parse_args()
 
     DATASET_DEVELOPMENT_DIR_PATH = args.development_dir
